@@ -14,6 +14,11 @@
     "noUncheckedIndexedAccess": true,
     "checkJs": true,
 
+    "types": [
+      "node",
+      "jest"
+    ],
+
     /* Bundled projects */
     "lib": ["dom", "dom.iterable", "ES2022"],
     "noEmit": true,
@@ -24,9 +29,10 @@
     "incremental": true,
 
     /* Path Aliases */
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "@/components/*": ["components/*"]
     }
   },
   "include": [
@@ -36,7 +42,8 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "**/*.spec.ts"
   ],
   "exclude": ["node_modules"]
 }

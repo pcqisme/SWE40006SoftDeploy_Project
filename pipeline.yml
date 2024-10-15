@@ -1,0 +1,12 @@
+steps:
+  - label: "Install Dependencies"
+    command: "npm install"
+    agents:
+      queue: "node"
+
+  - label: "Build React App"
+    command: "npm run build"
+    agents:
+      queue: "node"
+    artifact_paths:
+      - "build/**/*"

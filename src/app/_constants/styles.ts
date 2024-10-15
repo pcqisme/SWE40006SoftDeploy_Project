@@ -1,0 +1,5 @@
+export const BTN_ON_HOVER='#2f3ab2'
+export const BTN_PRIMARY_BG='#3b49df'
+export const MD_MARGIN='mx-8'
+export const LG_MARGIN='mx-14'
+export const XL_MARGIN='mx-28'

@@ -56,7 +56,7 @@ describe('PostCard', () => {
     render(<PostCard {...mockPost} />);
 
     fireEvent.click(screen.getByText(mockPost.username));
-    expect(mockRouter.push).toHaveBeenCalledWith(`/profiles/${mockPost.userId}`);
+    expect(mockRouter.push).toHaveBeenCalledWith(`/profile/${mockPost.userId}`);
   });
 
   it('navigates to post page when title is clicked', () => {
